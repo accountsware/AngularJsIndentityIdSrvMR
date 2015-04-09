@@ -1,5 +1,6 @@
 using System;
 using Angular.Data;
+using Angular.Data.Context;
 using Microsoft.Practices.Unity;
 
 namespace Angular.Bootstrapper
@@ -35,7 +36,7 @@ namespace Angular.Bootstrapper
 
 
             // TODO: Register your types here
-            container.RegisterType<DataContext>(new PerResolveLifetimeManager());
+            container.RegisterType<AngularContext>(new PerResolveLifetimeManager());
             //container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
             //container.RegisterType<IUserStore<User, Guid>, UserRepository>(new HierarchicalLifetimeManager());
             //container.RegisterType<IRoleStore<Role, Guid>, RoleRepository>(new HierarchicalLifetimeManager());

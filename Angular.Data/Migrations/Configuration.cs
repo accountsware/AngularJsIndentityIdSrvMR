@@ -1,6 +1,8 @@
 
 
 
+using Angular.Data.Context;
+
 namespace Angular.Data.Migrations
 {
     using System;
@@ -8,7 +10,7 @@ namespace Angular.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Angular.Data.DataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<AngularContext>
     {
 
 
@@ -18,7 +20,7 @@ namespace Angular.Data.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(DataContext context)
+        protected override void Seed(AngularContext context)
         {
 
             

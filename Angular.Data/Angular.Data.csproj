@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContext.cs" />
+    <Compile Include="CoreHelpers\StateHelper.cs" />
+    <Compile Include="Context\AngularContext.cs" />
+    <Compile Include="Context\DataContext.cs" />
     <Compile Include="Mappings\AlphabeticalListOfProductMap.cs" />
     <Compile Include="Mappings\Alphabetical_list_of_productMap.cs" />
     <Compile Include="Mappings\CategoryMap.cs" />

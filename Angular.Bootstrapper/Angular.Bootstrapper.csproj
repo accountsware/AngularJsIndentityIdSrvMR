@@ -142,6 +142,10 @@
       <Project>{6da9fe83-12ac-4101-a36c-03943ba256f5}</Project>
       <Name>Angular.Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AngularJs.Core\AngularJs.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>AngularJs.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

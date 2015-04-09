@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Diagnostics;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Angular.Data.Mappings;
 using AngularJs.Core.Modals;
 
-namespace Angular.Data
+namespace Angular.Data.Context
 {
-    public class DataContext : DbContext
+    public class AngularContext : DataContext
     {
       //  private static int instances = 0;
 
@@ -57,7 +50,7 @@ namespace Angular.Data
         public DbSet<SummaryOfSalesByYear> SummaryOfSalesByYears { get; set; }
         
 
-        public DataContext()
+        public AngularContext()
 
             : base("data source=.;initial catalog=Angular;integrated security=True")
 
@@ -73,7 +66,7 @@ namespace Angular.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Configurations.AddFromAssembly(Assembly.GetAssembly(typeof(DataContext)));
+            modelBuilder.Configurations.AddFromAssembly(Assembly.GetAssembly(typeof(AngularContext)));
             
             //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
