@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Angular.Data.Modals;
+using AngularJs.Core.Modals;
 using Microsoft.AspNet.Identity;
 
-
-namespace Angular.Data.IServices
+namespace Angular.Data.IIdentityManager
 {
     public interface IUserManager
     {
@@ -28,7 +27,7 @@ namespace Angular.Data.IServices
         /// <summary>
         /// Used to create claims identities from users
         /// </summary>
-        IClaimsIdentityFactory<User, Guid> ClaimsIdentityFactory { get; set; }
+  //      IClaimsIdentityFactory<User, Guid> ClaimsIdentityFactory { get; set; }
 
         /// <summary>
         /// Used to send email
@@ -43,7 +42,7 @@ namespace Angular.Data.IServices
         /// <summary>
         /// Used for generating reset password and confirmation tokens
         /// </summary>
-        IUserTokenProvider<User, Guid> UserTokenProvider { get; set; }
+     //   IUserTokenProvider<User, Guid> UserTokenProvider { get; set; }
 
         /// <summary>
         /// If true, will enable user lockout when users are created
@@ -113,7 +112,7 @@ namespace Angular.Data.IServices
         /// <summary>
         /// Maps the registered two-factor authentication providers for users by their id
         /// </summary>
-        IDictionary<string, IUserTokenProvider<User, Guid>> TwoFactorProviders { get; }
+   //     IDictionary<string, IUserTokenProvider<User, Guid>> TwoFactorProviders { get; }
 
         /// <summary>
         /// Creates a ClaimsIdentity representing the user
@@ -426,7 +425,7 @@ namespace Angular.Data.IServices
         /// Register a two factor authentication provider with the TwoFactorProviders mapping
         /// </summary>
         /// <param name="twoFactorProvider"/><param name="provider"/>
-        void RegisterTwoFactorProvider(string twoFactorProvider, IUserTokenProvider<User, Guid> provider);
+    //    void RegisterTwoFactorProvider(string twoFactorProvider, IUserTokenProvider<User, Guid> provider);
 
         /// <summary>
         /// Returns a list of valid two factor providers for a user

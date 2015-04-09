@@ -1,8 +1,6 @@
 ﻿
 using System.Web.Http;
 
-using Angular.Data.Modals;
-
 
 namespace Angular.Api.Controllers
 {

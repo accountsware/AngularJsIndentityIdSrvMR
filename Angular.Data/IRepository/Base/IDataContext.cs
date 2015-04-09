@@ -1,5 +1,5 @@
 ﻿using System;
-
+using AngularJs.Core.Modals.Base;
 
 namespace Angular.Data.IRepository.Base
 {

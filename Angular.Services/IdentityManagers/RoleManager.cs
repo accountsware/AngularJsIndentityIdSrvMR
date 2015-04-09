@@ -1,6 +1,5 @@
 ﻿using System;
-using Angular.Data.IServices;
-using Angular.Data.Modals;
+using Angular.Data.IIdentityManager;
 using Microsoft.AspNet.Identity;
 
 namespace Angular.Services.IdentityManagers

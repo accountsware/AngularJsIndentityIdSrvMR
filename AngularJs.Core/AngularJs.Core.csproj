@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AngularJs.Core</RootNamespace>
+    <AssemblyName>AngularJs.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Angular.Data">
+      <HintPath>..\Angular.Services\bin\Debug\Angular.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modals\AlphabeticalListOfProduct.cs" />
+    <Compile Include="Modals\Alphabetical_list_of_product.cs" />
+    <Compile Include="Modals\Application Message.cs" />
+    <Compile Include="Modals\Base\Entity.cs" />
+    <Compile Include="Modals\Base\IObjectState.cs" />
+    <Compile Include="Modals\Base\IQueryObject.cs" />
+    <Compile Include="Modals\Base\ObjectState.cs" />
+    <Compile Include="Modals\Category.cs" />
+    <Compile Include="Modals\CurrentProductList.cs" />
+    <Compile Include="Modals\Current_Product_List.cs" />
+    <Compile Include="Modals\Customer.cs" />
+    <Compile Include="Modals\CustomerAndSuppliersByCity.cs" />
+    <Compile Include="Modals\CustomerDemographic.cs" />
+    <Compile Include="Modals\Customer_and_Suppliers_by_City.cs" />
+    <Compile Include="Modals\Employee.cs" />
+    <Compile Include="Modals\Order.cs" />
+    <Compile Include="Modals\OrderDetail.cs" />
+    <Compile Include="Modals\OrderDetailsExtended.cs" />
+    <Compile Include="Modals\OrdersQry.cs" />
+    <Compile Include="Modals\OrderSubtotal.cs" />
+    <Compile Include="Modals\Orders_Qry.cs" />
+    <Compile Include="Modals\Person.cs" />
+    <Compile Include="Modals\Product.cs" />
+    <Compile Include="Modals\ProductsAboveAveragePrice.cs" />
+    <Compile Include="Modals\ProductSalesFor1997.cs" />
+    <Compile Include="Modals\ProductsByCategory.cs" />
+    <Compile Include="Modals\Products_Above_Average_Price.cs" />
+    <Compile Include="Modals\Products_by_Category.cs" />
+    <Compile Include="Modals\Region.cs" />
+    <Compile Include="Modals\Role.cs" />
+    <Compile Include="Modals\SalesTotalsByAmount.cs" />
+    <Compile Include="Modals\Shipper.cs" />
+    <Compile Include="Modals\SummaryOfSalesByQuarter.cs" />
+    <Compile Include="Modals\SummaryOfSalesByYear.cs" />
+    <Compile Include="Modals\Supplier.cs" />
+    <Compile Include="Modals\sysdiagram.cs" />
+    <Compile Include="Modals\Territory.cs" />
+    <Compile Include="Modals\User.cs" />
+    <Compile Include="Modals\UserClaim.cs" />
+    <Compile Include="Modals\UserLogin.cs" />
+    <Compile Include="Modals\UserRole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

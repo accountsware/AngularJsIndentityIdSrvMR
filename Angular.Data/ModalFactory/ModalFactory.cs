@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Angular.Data.Modals;
+using AngularJs.Core.Modals;
 
 namespace Angular.Data.ModalFactory
 {

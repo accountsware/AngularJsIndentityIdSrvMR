@@ -5,8 +5,6 @@ using System.Web.Http;
 using Angular.Common;
 using Angular.Data;
 using Angular.Data.IRepository;
-using Angular.Data.IServices;
-using Angular.Data.Modals;
 
 
 namespace Angular.Api.Controllers

@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using Angular.Data.Modals;
+using AngularJs.Core.Modals;
+
 
 namespace Angular.Data.Mappings
 {

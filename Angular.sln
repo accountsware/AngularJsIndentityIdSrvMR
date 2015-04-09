@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Common", "Angular.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Bootstrapper", "Angular.Bootstrapper\Angular.Bootstrapper.csproj", "{F9AA3C6F-1D12-43A1-A35F-1937D508DD83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJs.Core", "AngularJs.Core\AngularJs.Core.csproj", "{D5049B9C-D51D-4255-A334-22C5B1D5395A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F9AA3C6F-1D12-43A1-A35F-1937D508DD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9AA3C6F-1D12-43A1-A35F-1937D508DD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9AA3C6F-1D12-43A1-A35F-1937D508DD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5049B9C-D51D-4255-A334-22C5B1D5395A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5049B9C-D51D-4255-A334-22C5B1D5395A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5049B9C-D51D-4255-A334-22C5B1D5395A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5049B9C-D51D-4255-A334-22C5B1D5395A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

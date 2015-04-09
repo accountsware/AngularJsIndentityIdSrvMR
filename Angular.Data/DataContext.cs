@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Angular.Data.Mappings;
-using Angular.Data.Modals;
+using AngularJs.Core.Modals;
 
 namespace Angular.Data
 {

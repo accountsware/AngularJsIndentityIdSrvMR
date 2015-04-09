@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Angular.Data.Modals;
+using AngularJs.Core.Modals;
 using Microsoft.AspNet.Identity;
 
-namespace Angular.Data.IServices
+namespace Angular.Data.IIdentityManager
 {
     public interface IRoleManager
     {

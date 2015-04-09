@@ -2,7 +2,6 @@
 using System.Management.Instrumentation;
 using System.Net.Http.Formatting;
 using System.Web.Http;
-using Angular.Data.IServices;
 using Angular.Services.IdentityManagers;
 using Microsoft.Owin;
 using Microsoft.Practices.Unity;

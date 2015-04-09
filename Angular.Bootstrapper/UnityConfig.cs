@@ -1,9 +1,6 @@
 using System;
 using Angular.Data;
 using Angular.Data.IRepository;
-using Angular.Data.IRepository.Base;
-using Angular.Data.IServices;
-using Angular.Data.Modals;
 using Angular.Services.IdentityManagers;
 using Microsoft.AspNet.Identity;
 using Microsoft.Practices.Unity;

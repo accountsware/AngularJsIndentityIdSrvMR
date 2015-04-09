@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using AngularJs.Core.Modals.Base;
 
 namespace Angular.Data.IRepository.Base
 {
