@@ -2,7 +2,7 @@
 using System.Management.Instrumentation;
 using System.Net.Http.Formatting;
 using System.Web.Http;
-using Angular.Services.IdentityManagers;
+
 using Microsoft.Owin;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.WebApi;

@@ -3,8 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Angular.Common;
-using Angular.Data;
-using Angular.Data.IRepository;
+
 
 
 namespace Angular.Api.Controllers

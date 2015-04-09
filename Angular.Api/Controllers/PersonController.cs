@@ -16,7 +16,7 @@ namespace Angular.Api.Controllers
 
         }
          [Route("Add")]
-        public IHttpActionResult Add(Person prson)
+        public IHttpActionResult Add()
         {
 
 

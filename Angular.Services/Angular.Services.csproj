@@ -76,8 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IdentityManagers\RoleManager.cs" />
-    <Compile Include="IdentityManagers\ApplicationUserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Angular.Common\Angular.Common.csproj">
@@ -95,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Base\" />
+    <Folder Include="IdentityManagers\" />
     <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
