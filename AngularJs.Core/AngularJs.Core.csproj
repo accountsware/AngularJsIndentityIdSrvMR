@@ -43,6 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IIdentityManager\IRoleManager.cs" />
+    <Compile Include="IIdentityManager\IUserManager.cs" />
+    <Compile Include="IRepository\Base\IDataContext.cs" />
+    <Compile Include="IRepository\Base\IDataContextAsync.cs" />
+    <Compile Include="IRepository\Base\IQueryFluent.cs" />
+    <Compile Include="IRepository\Base\IRepository.cs" />
+    <Compile Include="IRepository\Base\IRepositoryAsync.cs" />
+    <Compile Include="IRepository\Base\IUnitOfWork.cs" />
+    <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
     <Compile Include="Modals\AlphabeticalListOfProduct.cs" />
     <Compile Include="Modals\Alphabetical_list_of_product.cs" />
     <Compile Include="Modals\Application Message.cs" />
@@ -85,6 +94,9 @@
     <Compile Include="Modals\UserLogin.cs" />
     <Compile Include="Modals\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IServices\Base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

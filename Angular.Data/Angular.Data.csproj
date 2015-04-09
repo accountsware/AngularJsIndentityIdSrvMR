@@ -51,13 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="IRepository\Base\IDataContext.cs" />
-    <Compile Include="IRepository\Base\IDataContextAsync.cs" />
-    <Compile Include="IRepository\Base\IQueryFluent.cs" />
-    <Compile Include="IRepository\Base\IRepository.cs" />
-    <Compile Include="IRepository\Base\IRepositoryAsync.cs" />
-    <Compile Include="IRepository\Base\IUnitOfWork.cs" />
-    <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
     <Compile Include="Mappings\AlphabeticalListOfProductMap.cs" />
     <Compile Include="Mappings\Alphabetical_list_of_productMap.cs" />
     <Compile Include="Mappings\CategoryMap.cs" />
@@ -92,11 +85,9 @@
     <Compile Include="Mappings\UserLoginMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="Mappings\UserRoleMap.cs" />
-    <Compile Include="IIdentityManager\IRoleManager.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModalFactory\ModalFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IIdentityManager\IUserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -113,7 +104,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="IServices\Base\" />
     <Folder Include="Repository\base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

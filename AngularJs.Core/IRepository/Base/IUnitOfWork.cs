@@ -2,7 +2,7 @@
 using System.Data;
 using AngularJs.Core.Modals.Base;
 
-namespace Angular.Data.IRepository.Base
+namespace AngularJs.Core.IRepository.Base
 {
     public interface IUnitOfWork : IDisposable
     {
