@@ -4,11 +4,7 @@ using Angular.Data.IRepository;
 using Angular.Data.IRepository.Base;
 using Angular.Data.IServices;
 using Angular.Data.Modals;
-using Angular.Data.Repository;
-using Angular.Data.Repository.@base;
-using Angular.Services;
 using Angular.Services.IdentityManagers;
-using Angular.Services.Service;
 using Microsoft.AspNet.Identity;
 using Microsoft.Practices.Unity;
 
@@ -45,16 +41,16 @@ namespace Angular.Bootstrapper
 
 
             // TODO: Register your types here
-            container.RegisterType<DataContext>(new PerResolveLifetimeManager());
-            container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
-            container.RegisterType<IUserStore<User, Guid>, UserRepository>(new HierarchicalLifetimeManager());
-            container.RegisterType<IRoleStore<Role, Guid>, RoleRepository>(new HierarchicalLifetimeManager());
-            container.RegisterType<IUserRepository<User>, UserRepository>(new HierarchicalLifetimeManager());
-            container.RegisterType<IPersonRepository, PersonRepository>(new HierarchicalLifetimeManager());
-            container.RegisterType<IPersonService, PersonService>(new HierarchicalLifetimeManager());
-            container.RegisterType<IUserService, UserService>(new HierarchicalLifetimeManager());
-            container.RegisterType<IUserManager, ApplicationUserManager>(new HierarchicalLifetimeManager());
-            container.RegisterType<IRoleManager, ApplicationRoleManager>(new HierarchicalLifetimeManager());
+            //container.RegisterType<DataContext>(new PerResolveLifetimeManager());
+            //container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
+            //container.RegisterType<IUserStore<User, Guid>, UserRepository>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IRoleStore<Role, Guid>, RoleRepository>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IUserRepository, UserRepository>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IPersonRepository, PersonRepository>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IPersonService, PersonService>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IUserService, UserService>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IUserManager, ApplicationUserManager>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IRoleManager, ApplicationRoleManager>(new HierarchicalLifetimeManager());
             
         }
     }

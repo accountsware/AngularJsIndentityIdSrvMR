@@ -51,34 +51,93 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="IRepository\Base\IGenericRepository.cs" />
+    <Compile Include="IRepository\Base\IDataContext.cs" />
+    <Compile Include="IRepository\Base\IDataContextAsync.cs" />
+    <Compile Include="IRepository\Base\IObjectState.cs" />
+    <Compile Include="IRepository\Base\IQueryFluent.cs" />
+    <Compile Include="IRepository\Base\IQueryObject.cs" />
+    <Compile Include="IRepository\Base\IRepository.cs" />
+    <Compile Include="IRepository\Base\IRepositoryAsync.cs" />
     <Compile Include="IRepository\Base\IUnitOfWork.cs" />
-    <Compile Include="IRepository\IPersonRepository.cs" />
-    <Compile Include="IRepository\IRoleRepository.cs" />
-    <Compile Include="IRepository\IUserRepository.cs" />
-    <Compile Include="IServices\Base\IService.cs" />
-    <Compile Include="IServices\IPersonService.cs" />
-    <Compile Include="IServices\IUserService.cs" />
+    <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
+    <Compile Include="IRepository\Base\ObjectState.cs" />
+    <Compile Include="Mappings\AlphabeticalListOfProductMap.cs" />
+    <Compile Include="Mappings\Alphabetical_list_of_productMap.cs" />
+    <Compile Include="Mappings\CategoryMap.cs" />
+    <Compile Include="Mappings\CurrentProductListMap.cs" />
+    <Compile Include="Mappings\Current_Product_ListMap.cs" />
+    <Compile Include="Mappings\CustomerAndSuppliersByCityMap.cs" />
+    <Compile Include="Mappings\CustomerDemographicMap.cs" />
+    <Compile Include="Mappings\CustomerMap.cs" />
+    <Compile Include="Mappings\Customer_and_Suppliers_by_CityMap.cs" />
+    <Compile Include="Mappings\EmployeeMap.cs" />
+    <Compile Include="Mappings\OrderDetailMap.cs" />
+    <Compile Include="Mappings\OrderDetailsExtendedMap.cs" />
+    <Compile Include="Mappings\OrderMap.cs" />
+    <Compile Include="Mappings\OrdersQryMap.cs" />
+    <Compile Include="Mappings\OrderSubtotalMap.cs" />
+    <Compile Include="Mappings\Orders_QryMap.cs" />
+    <Compile Include="Mappings\ProductMap.cs" />
+    <Compile Include="Mappings\ProductsAboveAveragePriceMap.cs" />
+    <Compile Include="Mappings\ProductSalesFor1997Map.cs" />
+    <Compile Include="Mappings\ProductsByCategoryMap.cs" />
+    <Compile Include="Mappings\Products_Above_Average_PriceMap.cs" />
+    <Compile Include="Mappings\Products_by_CategoryMap.cs" />
+    <Compile Include="Mappings\RegionMap.cs" />
     <Compile Include="Mappings\RoleMap.cs" />
+    <Compile Include="Mappings\SalesTotalsByAmountMap.cs" />
+    <Compile Include="Mappings\ShipperMap.cs" />
+    <Compile Include="Mappings\SummaryOfSalesByQuarterMap.cs" />
+    <Compile Include="Mappings\SummaryOfSalesByYearMap.cs" />
+    <Compile Include="Mappings\SupplierMap.cs" />
+    <Compile Include="Mappings\sysdiagramMap.cs" />
+    <Compile Include="Mappings\TerritoryMap.cs" />
     <Compile Include="Mappings\UserLoginMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="Mappings\UserRoleMap.cs" />
+    <Compile Include="Modals\AlphabeticalListOfProduct.cs" />
+    <Compile Include="Modals\Alphabetical_list_of_product.cs" />
     <Compile Include="Modals\Application Message.cs" />
     <Compile Include="IIdentityManager\IRoleManager.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModalFactory\ModalFactory.cs" />
+    <Compile Include="Modals\Base\Entity.cs" />
+    <Compile Include="Modals\Category.cs" />
+    <Compile Include="Modals\CurrentProductList.cs" />
+    <Compile Include="Modals\Current_Product_List.cs" />
+    <Compile Include="Modals\Customer.cs" />
+    <Compile Include="Modals\CustomerAndSuppliersByCity.cs" />
+    <Compile Include="Modals\CustomerDemographic.cs" />
+    <Compile Include="Modals\Customer_and_Suppliers_by_City.cs" />
+    <Compile Include="Modals\Employee.cs" />
+    <Compile Include="Modals\NorthwindContext.cs" />
+    <Compile Include="Modals\Order.cs" />
+    <Compile Include="Modals\OrderDetail.cs" />
+    <Compile Include="Modals\OrderDetailsExtended.cs" />
+    <Compile Include="Modals\OrdersQry.cs" />
+    <Compile Include="Modals\OrderSubtotal.cs" />
+    <Compile Include="Modals\Orders_Qry.cs" />
     <Compile Include="Modals\Person.cs" />
+    <Compile Include="Modals\Product.cs" />
+    <Compile Include="Modals\ProductsAboveAveragePrice.cs" />
+    <Compile Include="Modals\ProductSalesFor1997.cs" />
+    <Compile Include="Modals\ProductsByCategory.cs" />
+    <Compile Include="Modals\Products_Above_Average_Price.cs" />
+    <Compile Include="Modals\Products_by_Category.cs" />
+    <Compile Include="Modals\Region.cs" />
     <Compile Include="Modals\Role.cs" />
+    <Compile Include="Modals\SalesTotalsByAmount.cs" />
+    <Compile Include="Modals\Shipper.cs" />
+    <Compile Include="Modals\SummaryOfSalesByQuarter.cs" />
+    <Compile Include="Modals\SummaryOfSalesByYear.cs" />
+    <Compile Include="Modals\Supplier.cs" />
+    <Compile Include="Modals\sysdiagram.cs" />
+    <Compile Include="Modals\Territory.cs" />
     <Compile Include="Modals\User.cs" />
     <Compile Include="Modals\UserClaim.cs" />
     <Compile Include="Modals\UserLogin.cs" />
     <Compile Include="Modals\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\base\GenericRepository.cs" />
-    <Compile Include="Repository\base\UnitOfWork.cs" />
-    <Compile Include="Repository\PersonRepository.cs" />
-    <Compile Include="Repository\RoleRepository.cs" />
-    <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="IIdentityManager\IUserManager.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +149,10 @@
       <Project>{83604bb2-2d75-40bb-be77-4f5569ad0ad2}</Project>
       <Name>Angular.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IServices\Base\" />
+    <Folder Include="Repository\base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

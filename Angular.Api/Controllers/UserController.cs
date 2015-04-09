@@ -3,8 +3,10 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Angular.Common;
+using Angular.Data;
+using Angular.Data.IRepository;
 using Angular.Data.IServices;
-
+using Angular.Data.Modals;
 
 
 namespace Angular.Api.Controllers
@@ -12,18 +14,17 @@ namespace Angular.Api.Controllers
     [RoutePrefix("api/user")]
     public class UserController : ApiController
     {
-        private IUserService _userService;
+
+
+        
+
 
 
         public UserController()
         {
             
         }
-        public UserController(IUserService userService)
-        {
-            _userService = userService;
 
-        }
 
         [Route("Name")]
         [HttpGet]
@@ -42,12 +43,7 @@ namespace Angular.Api.Controllers
         [Route("Register")]
         public IHttpActionResult Register(CreateUserBindingModel usr)
         {
-           
 
-
-              _userService.RegisterUser(usr);
-
-   
            
                 return Ok();   
             

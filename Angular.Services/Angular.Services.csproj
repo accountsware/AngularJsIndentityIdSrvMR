@@ -75,12 +75,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\BaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IdentityManagers\RoleManager.cs" />
     <Compile Include="IdentityManagers\ApplicationUserManager.cs" />
-    <Compile Include="Service\PersonService.cs" />
-    <Compile Include="Service\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Angular.Common\Angular.Common.csproj">
@@ -96,7 +93,10 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Base\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

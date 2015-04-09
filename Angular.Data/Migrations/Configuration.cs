@@ -1,10 +1,5 @@
 
-using System.Threading;
-using Angular.Data.IRepository;
-using Angular.Data.IServices;
-using Angular.Data.Modals;
-using Angular.Data.Repository;
-using Microsoft.AspNet.Identity;
+
 
 namespace Angular.Data.Migrations
 {

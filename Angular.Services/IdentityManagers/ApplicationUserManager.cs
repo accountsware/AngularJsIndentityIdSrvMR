@@ -14,7 +14,7 @@ namespace Angular.Services.IdentityManagers
 
         
 
-        public ApplicationUserManager(IUserRepository<User> userRepository)
+        public ApplicationUserManager(IUserStore<User, Guid> userRepository)
             : base(userRepository)
         {
             
@@ -38,5 +38,12 @@ namespace Angular.Services.IdentityManagers
             };
             
         }
+
+        protected override void Dispose(bool disposing)
+        {
+           this.Dispose(true);
+        }
     }
+
+    
 }

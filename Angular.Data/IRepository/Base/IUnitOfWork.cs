@@ -1,12 +1,15 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Data;
 
 namespace Angular.Data.IRepository.Base
 {
     public interface IUnitOfWork : IDisposable
     {
-
-        void SaveChanges();
-        Task SaveChangesAsync();
+        int SaveChanges();
+        void Dispose(bool disposing);
+        IRepository<TEntity> Repository<TEntity>() where TEntity : class, IObjectState;
+        void BeginTransaction(IsolationLevel isolationLevel = IsolationLevel.Unspecified);
+        bool Commit();
+        void Rollback();
     }
 }
