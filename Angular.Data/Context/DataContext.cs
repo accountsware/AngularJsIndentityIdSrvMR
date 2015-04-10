@@ -16,8 +16,9 @@ namespace Angular.Data.Context
         bool _disposed;
         #endregion Private Fields
 
+
         public DataContext(string nameOrConnectionString)
-            : base(nameOrConnectionString)
+            : base("data source=.;initial catalog=Angular;integrated security=True")
         {
             _instanceId = Guid.NewGuid();
             Configuration.LazyLoadingEnabled = false;
