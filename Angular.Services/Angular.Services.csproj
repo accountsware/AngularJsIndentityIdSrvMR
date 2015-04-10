@@ -83,13 +83,13 @@
       <Project>{83604bb2-2d75-40bb-be77-4f5569ad0ad2}</Project>
       <Name>Angular.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Angular.Core\Angular.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>Angular.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Angular.Data\Angular.Data.csproj">
       <Project>{4c273cfc-ea24-4a77-a0a6-53feee45374a}</Project>
       <Name>Angular.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AngularJs.Core\AngularJs.Core.csproj">
-      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
-      <Name>AngularJs.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

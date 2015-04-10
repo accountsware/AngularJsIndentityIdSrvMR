@@ -83,9 +83,9 @@
       <Project>{83604bb2-2d75-40bb-be77-4f5569ad0ad2}</Project>
       <Name>Angular.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AngularJs.Core\AngularJs.Core.csproj">
-      <Project>{d5049b9c-d51d-4255-a334-22c5b1d5395a}</Project>
-      <Name>AngularJs.Core</Name>
+    <ProjectReference Include="..\Angular.Core\Angular.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>Angular.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

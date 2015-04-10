@@ -8,9 +8,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-using AngularJs.Core.IDataService;
-using AngularJs.Core.IRepository.Base;
-using AngularJs.Core.Modals.Base;
+using Angular.Core.IDataService;
+using Angular.Core.IRepository.Base;
+using Angular.Core.Modals.Base;
 using LinqKit;
 
 #endregion

@@ -3,9 +3,9 @@ using System.Data.Entity;
 using System.Threading;
 using System.Threading.Tasks;
 using Angular.Data.CoreHelpers;
-using AngularJs.Core.IDataService;
-using AngularJs.Core.IRepository.Base;
-using AngularJs.Core.Modals.Base;
+using Angular.Core.IDataService;
+using Angular.Core.IRepository.Base;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Data.Context
 {

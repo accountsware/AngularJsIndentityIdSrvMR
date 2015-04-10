@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Reflection;
 using Angular.Data.Mappings;
-using AngularJs.Core.Modals;
+using Angular.Core.Modals;
 
 namespace Angular.Data.Context
 {

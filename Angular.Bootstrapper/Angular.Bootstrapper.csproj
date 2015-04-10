@@ -134,6 +134,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Angular.Core\Angular.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>Angular.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Angular.Data\Angular.Data.csproj">
       <Project>{4C273CFC-EA24-4A77-A0A6-53FEEE45374A}</Project>
       <Name>Angular.Data</Name>
@@ -141,10 +145,6 @@
     <ProjectReference Include="..\Angular.Services\Angular.Services.csproj">
       <Project>{6da9fe83-12ac-4101-a36c-03943ba256f5}</Project>
       <Name>Angular.Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AngularJs.Core\AngularJs.Core.csproj">
-      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
-      <Name>AngularJs.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

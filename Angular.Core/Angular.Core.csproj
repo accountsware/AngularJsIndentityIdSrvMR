@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Angular.Core</RootNamespace>
+    <AssemblyName>Angular.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Angular.Data">
+      <HintPath>..\Angular.Services\bin\Debug\Angular.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IIdentityManager\IRoleManager.cs" />
+    <Compile Include="IIdentityManager\IUserManager.cs" />
+    <Compile Include="IDataService\IDataContext.cs" />
+    <Compile Include="IDataService\IDataContextAsync.cs" />
+    <Compile Include="IDataService\IQueryFluent.cs" />
+    <Compile Include="IDataService\IQueryObject.cs" />
+    <Compile Include="IRepository\Base\IRepository.cs" />
+    <Compile Include="IRepository\Base\IRepositoryAsync.cs" />
+    <Compile Include="IRepository\Base\IUnitOfWork.cs" />
+    <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
+    <Compile Include="IServices\Base\IService.cs" />
+    <Compile Include="Modals\Application Message.cs" />
+    <Compile Include="Modals\Base\Entity.cs" />
+    <Compile Include="Modals\Base\IObjectState.cs" />
+    <Compile Include="Modals\Base\ObjectState.cs" />
+    <Compile Include="Modals\Category.cs" />
+    <Compile Include="Modals\Customer.cs" />
+    <Compile Include="Modals\Employee.cs" />
+    <Compile Include="Modals\Order.cs" />
+    <Compile Include="Modals\OrderDetail.cs" />
+    <Compile Include="Modals\Person.cs" />
+    <Compile Include="Modals\Product.cs" />
+    <Compile Include="Modals\Region.cs" />
+    <Compile Include="Modals\Role.cs" />
+    <Compile Include="Modals\Shipper.cs" />
+    <Compile Include="Modals\Supplier.cs" />
+    <Compile Include="Modals\Territory.cs" />
+    <Compile Include="Modals\User.cs" />
+    <Compile Include="Modals\UserClaim.cs" />
+    <Compile Include="Modals\UserLogin.cs" />
+    <Compile Include="Modals\UserRole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

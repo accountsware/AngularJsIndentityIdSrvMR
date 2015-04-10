@@ -57,9 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="scripts\angular.min.js.map" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\authentication\authenticationController.js" />
     <Content Include="app\authentication\authenticationModule.js" />
@@ -83,6 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="scripts\angular-route.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\angular.min.js.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using AngularJs.Core.IDataService;
-using AngularJs.Core.Modals.Base;
+using Angular.Core.IDataService;
+using Angular.Core.Modals.Base;
 using Angular.Data.Repository.@base;
 
 namespace Angular.Data

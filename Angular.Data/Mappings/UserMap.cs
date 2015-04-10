@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Configuration;
-using AngularJs.Core.Modals;
+using Angular.Core.Modals;
 
 namespace Angular.Data.Mappings
 {

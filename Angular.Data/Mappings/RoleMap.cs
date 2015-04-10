@@ -5,7 +5,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AngularJs.Core.Modals;
+using Angular.Core.Modals;
 
 namespace Angular.Data.Mappings
 {

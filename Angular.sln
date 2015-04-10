@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Common", "Angular.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Bootstrapper", "Angular.Bootstrapper\Angular.Bootstrapper.csproj", "{F9AA3C6F-1D12-43A1-A35F-1937D508DD83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJs.Core", "AngularJs.Core\AngularJs.Core.csproj", "{D5049B9C-D51D-4255-A334-22C5B1D5395A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Core", "Angular.Core\Angular.Core.csproj", "{D5049B9C-D51D-4255-A334-22C5B1D5395A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
-using AngularJs.Core.Modals.Base;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Data.CoreHelpers
 {
