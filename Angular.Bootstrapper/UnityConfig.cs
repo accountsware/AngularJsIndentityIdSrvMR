@@ -6,7 +6,7 @@ using Microsoft.Practices.Unity;
 namespace Angular.Bootstrapper
 {
     /// <summary>
-    /// Specifies the Unity configuration for the main container.
+    /// Specifies the Unity configuration for the main container
     /// </summary>
     public class UnityConfig
     {

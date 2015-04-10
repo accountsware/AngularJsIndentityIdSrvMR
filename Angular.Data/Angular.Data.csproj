@@ -36,6 +36,10 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="LinqKit, Version=1.1.2.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINQKit.1.1.2\lib\net45\LinqKit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -50,36 +54,16 @@
     <Compile Include="CoreHelpers\StateHelper.cs" />
     <Compile Include="Context\AngularContext.cs" />
     <Compile Include="Context\DataContext.cs" />
-    <Compile Include="Mappings\AlphabeticalListOfProductMap.cs" />
-    <Compile Include="Mappings\Alphabetical_list_of_productMap.cs" />
     <Compile Include="Mappings\CategoryMap.cs" />
-    <Compile Include="Mappings\CurrentProductListMap.cs" />
-    <Compile Include="Mappings\Current_Product_ListMap.cs" />
-    <Compile Include="Mappings\CustomerAndSuppliersByCityMap.cs" />
-    <Compile Include="Mappings\CustomerDemographicMap.cs" />
     <Compile Include="Mappings\CustomerMap.cs" />
-    <Compile Include="Mappings\Customer_and_Suppliers_by_CityMap.cs" />
     <Compile Include="Mappings\EmployeeMap.cs" />
     <Compile Include="Mappings\OrderDetailMap.cs" />
-    <Compile Include="Mappings\OrderDetailsExtendedMap.cs" />
     <Compile Include="Mappings\OrderMap.cs" />
-    <Compile Include="Mappings\OrdersQryMap.cs" />
-    <Compile Include="Mappings\OrderSubtotalMap.cs" />
-    <Compile Include="Mappings\Orders_QryMap.cs" />
     <Compile Include="Mappings\ProductMap.cs" />
-    <Compile Include="Mappings\ProductsAboveAveragePriceMap.cs" />
-    <Compile Include="Mappings\ProductSalesFor1997Map.cs" />
-    <Compile Include="Mappings\ProductsByCategoryMap.cs" />
-    <Compile Include="Mappings\Products_Above_Average_PriceMap.cs" />
-    <Compile Include="Mappings\Products_by_CategoryMap.cs" />
     <Compile Include="Mappings\RegionMap.cs" />
     <Compile Include="Mappings\RoleMap.cs" />
-    <Compile Include="Mappings\SalesTotalsByAmountMap.cs" />
     <Compile Include="Mappings\ShipperMap.cs" />
-    <Compile Include="Mappings\SummaryOfSalesByQuarterMap.cs" />
-    <Compile Include="Mappings\SummaryOfSalesByYearMap.cs" />
     <Compile Include="Mappings\SupplierMap.cs" />
-    <Compile Include="Mappings\sysdiagramMap.cs" />
     <Compile Include="Mappings\TerritoryMap.cs" />
     <Compile Include="Mappings\UserLoginMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
@@ -87,6 +71,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModalFactory\ModalFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryFluent.cs" />
+    <Compile Include="Repository\base\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -101,9 +87,6 @@
       <Project>{d5049b9c-d51d-4255-a334-22c5b1d5395a}</Project>
       <Name>AngularJs.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repository\base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

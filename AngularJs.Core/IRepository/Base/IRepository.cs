@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using AngularJs.Core.IDataService;
 using AngularJs.Core.Modals.Base;
 
 namespace AngularJs.Core.IRepository.Base
@@ -17,7 +18,7 @@ namespace AngularJs.Core.IRepository.Base
         void Update(TEntity entity);
         void Delete(object id);
         void Delete(TEntity entity);
-        IQueryFluent<TEntity> Query(IQueryObject<TEntity> queryObject);
+        IQueryFluent<TEntity> Query(IDataService.IQueryObject<TEntity> queryObject);
         IQueryFluent<TEntity> Query(Expression<Func<TEntity, bool>> query);
         IQueryFluent<TEntity> Query();
         IQueryable<TEntity> Queryable();

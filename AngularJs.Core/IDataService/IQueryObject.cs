@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace AngularJs.Core.Modals.Base
+namespace AngularJs.Core.IDataService
 {
     public interface IQueryObject<TEntity>
     {

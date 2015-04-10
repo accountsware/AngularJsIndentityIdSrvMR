@@ -45,49 +45,30 @@
   <ItemGroup>
     <Compile Include="IIdentityManager\IRoleManager.cs" />
     <Compile Include="IIdentityManager\IUserManager.cs" />
-    <Compile Include="IRepository\Base\IDataContext.cs" />
-    <Compile Include="IRepository\Base\IDataContextAsync.cs" />
-    <Compile Include="IRepository\Base\IQueryFluent.cs" />
+    <Compile Include="IDataService\IDataContext.cs" />
+    <Compile Include="IDataService\IDataContextAsync.cs" />
+    <Compile Include="IDataService\IQueryFluent.cs" />
+    <Compile Include="IDataService\IQueryObject.cs" />
     <Compile Include="IRepository\Base\IRepository.cs" />
     <Compile Include="IRepository\Base\IRepositoryAsync.cs" />
     <Compile Include="IRepository\Base\IUnitOfWork.cs" />
     <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
-    <Compile Include="Modals\AlphabeticalListOfProduct.cs" />
-    <Compile Include="Modals\Alphabetical_list_of_product.cs" />
+    <Compile Include="IServices\Base\IService.cs" />
     <Compile Include="Modals\Application Message.cs" />
     <Compile Include="Modals\Base\Entity.cs" />
     <Compile Include="Modals\Base\IObjectState.cs" />
-    <Compile Include="Modals\Base\IQueryObject.cs" />
     <Compile Include="Modals\Base\ObjectState.cs" />
     <Compile Include="Modals\Category.cs" />
-    <Compile Include="Modals\CurrentProductList.cs" />
-    <Compile Include="Modals\Current_Product_List.cs" />
     <Compile Include="Modals\Customer.cs" />
-    <Compile Include="Modals\CustomerAndSuppliersByCity.cs" />
-    <Compile Include="Modals\CustomerDemographic.cs" />
-    <Compile Include="Modals\Customer_and_Suppliers_by_City.cs" />
     <Compile Include="Modals\Employee.cs" />
     <Compile Include="Modals\Order.cs" />
     <Compile Include="Modals\OrderDetail.cs" />
-    <Compile Include="Modals\OrderDetailsExtended.cs" />
-    <Compile Include="Modals\OrdersQry.cs" />
-    <Compile Include="Modals\OrderSubtotal.cs" />
-    <Compile Include="Modals\Orders_Qry.cs" />
     <Compile Include="Modals\Person.cs" />
     <Compile Include="Modals\Product.cs" />
-    <Compile Include="Modals\ProductsAboveAveragePrice.cs" />
-    <Compile Include="Modals\ProductSalesFor1997.cs" />
-    <Compile Include="Modals\ProductsByCategory.cs" />
-    <Compile Include="Modals\Products_Above_Average_Price.cs" />
-    <Compile Include="Modals\Products_by_Category.cs" />
     <Compile Include="Modals\Region.cs" />
     <Compile Include="Modals\Role.cs" />
-    <Compile Include="Modals\SalesTotalsByAmount.cs" />
     <Compile Include="Modals\Shipper.cs" />
-    <Compile Include="Modals\SummaryOfSalesByQuarter.cs" />
-    <Compile Include="Modals\SummaryOfSalesByYear.cs" />
     <Compile Include="Modals\Supplier.cs" />
-    <Compile Include="Modals\sysdiagram.cs" />
     <Compile Include="Modals\Territory.cs" />
     <Compile Include="Modals\User.cs" />
     <Compile Include="Modals\UserClaim.cs" />
@@ -95,9 +76,7 @@
     <Compile Include="Modals\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IServices\Base\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>

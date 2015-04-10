@@ -1,7 +1,7 @@
 ﻿using System;
 using AngularJs.Core.Modals.Base;
 
-namespace AngularJs.Core.IRepository.Base
+namespace AngularJs.Core.IDataService
 {
     public interface IDataContext : IDisposable
     {

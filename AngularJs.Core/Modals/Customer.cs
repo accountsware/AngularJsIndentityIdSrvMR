@@ -11,7 +11,7 @@ namespace AngularJs.Core.Modals
         public Customer()
         {
             this.Orders = new List<Order>();
-            this.CustomerDemographics = new List<CustomerDemographic>();
+
         }
 
         public string CustomerID { get; set; }
@@ -26,6 +26,6 @@ namespace AngularJs.Core.Modals
         public string Phone { get; set; }
         public string Fax { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
-        public virtual ICollection<CustomerDemographic> CustomerDemographics { get; set; }
+ 
     }
 }

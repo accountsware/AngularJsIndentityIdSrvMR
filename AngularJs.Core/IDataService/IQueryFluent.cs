@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AngularJs.Core.Modals.Base;
 
-namespace AngularJs.Core.IRepository.Base
+namespace AngularJs.Core.IDataService
 {
     public interface IQueryFluent<TEntity> where TEntity : IObjectState
     {

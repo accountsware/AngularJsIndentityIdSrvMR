@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Angular.Common\Angular.Common.csproj">
@@ -86,15 +87,17 @@
       <Project>{4c273cfc-ea24-4a77-a0a6-53feee45374a}</Project>
       <Name>Angular.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AngularJs.Core\AngularJs.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>AngularJs.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base\" />
     <Folder Include="IdentityManagers\" />
-    <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@ using System.Data.Entity;
 using System.Threading;
 using System.Threading.Tasks;
 using Angular.Data.CoreHelpers;
+using AngularJs.Core.IDataService;
 using AngularJs.Core.IRepository.Base;
 using AngularJs.Core.Modals.Base;
 
