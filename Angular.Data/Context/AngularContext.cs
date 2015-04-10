@@ -9,13 +9,6 @@ namespace Angular.Data.Context
 {
     public class AngularContext : DataContext
     {
-        //  private static int instances = 0;
-
-        //public static int GetActiveInstances()
-        //{
-        //    return instances;
-        //}
-        private bool _disposed;
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
@@ -38,12 +31,8 @@ namespace Angular.Data.Context
 
         {
 
-
-            // Debug -- count instances
-
-            //         instances++;
-            //         Debug.WriteLine(instances);
         }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
