@@ -9,16 +9,17 @@ namespace Angular.Core.Modals
     {
         public Order()
         {
+            OrderID = Guid.NewGuid();
             this.OrderDetails = new List<OrderDetail>();
         }
 
-        public int OrderID { get; set; }
-        public string CustomerID { get; set; }
-        public Nullable<int> EmployeeID { get; set; }
+        public Guid OrderID { get; set; }
+        public Guid CustomerID { get; set; }
+        public Nullable<Guid> EmployeeID { get; set; }
         public Nullable<System.DateTime> OrderDate { get; set; }
         public Nullable<System.DateTime> RequiredDate { get; set; }
         public Nullable<System.DateTime> ShippedDate { get; set; }
-        public Nullable<int> ShipVia { get; set; }
+        public Nullable<Guid> ShipVia { get; set; }
         public Nullable<decimal> Freight { get; set; }
         public string ShipName { get; set; }
         public string ShipAddress { get; set; }

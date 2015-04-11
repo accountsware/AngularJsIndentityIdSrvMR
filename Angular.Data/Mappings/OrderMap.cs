@@ -12,9 +12,7 @@ namespace Angular.Data.Mappings
             this.HasKey(t => t.OrderID);
 
             // Properties
-            this.Property(t => t.CustomerID)
-                .IsFixedLength()
-                .HasMaxLength(5);
+
 
             this.Property(t => t.ShipName)
                 .HasMaxLength(40);
@@ -52,7 +50,7 @@ namespace Angular.Data.Mappings
             this.Property(t => t.ShipCountry).HasColumnName("ShipCountry");
 
             // Relationships
-            this.HasOptional(t => t.Customer)
+            this.HasRequired(t => t.Customer)
                 .WithMany(t => t.Orders)
                 .HasForeignKey(d => d.CustomerID);
             this.HasOptional(t => t.Employee)

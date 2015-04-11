@@ -9,13 +9,14 @@ namespace Angular.Core.Modals
     {
         public Product()
         {
+            ProductID = Guid.NewGuid();
             this.OrderDetails = new List<OrderDetail>();
         }
 
-        public int ProductID { get; set; }
+        public Guid ProductID { get; set; }
         public string ProductName { get; set; }
-        public Nullable<int> SupplierID { get; set; }
-        public Nullable<int> CategoryID { get; set; }
+        public Nullable<Guid> SupplierID { get; set; }
+        public Nullable<Guid> CategoryID { get; set; }
         public string QuantityPerUnit { get; set; }
         public Nullable<decimal> UnitPrice { get; set; }
         public Nullable<short> UnitsInStock { get; set; }

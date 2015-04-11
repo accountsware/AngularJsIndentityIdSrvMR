@@ -81,9 +81,7 @@ namespace Angular.Data.Mappings
                         m.MapRightKey("TerritoryID");
                     });
 
-            this.HasOptional(t => t.Employee1)
-                .WithMany(t => t.Employees1)
-                .HasForeignKey(d => d.ReportsTo);
+           
 
         }
     }

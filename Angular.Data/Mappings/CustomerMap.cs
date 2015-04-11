@@ -13,9 +13,7 @@ namespace Angular.Data.Mappings
 
             // Properties
             this.Property(t => t.CustomerID)
-                .IsRequired()
-                .IsFixedLength()
-                .HasMaxLength(5);
+                .IsRequired();
 
             this.Property(t => t.CompanyName)
                 .IsRequired()

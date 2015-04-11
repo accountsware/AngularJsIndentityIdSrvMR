@@ -12,9 +12,8 @@ namespace Angular.Data.Mappings
             this.HasKey(t => t.TerritoryID);
 
             // Properties
-            this.Property(t => t.TerritoryID)
-                .IsRequired()
-                .HasMaxLength(20);
+
+
 
             this.Property(t => t.TerritoryDescription)
                 .IsRequired()

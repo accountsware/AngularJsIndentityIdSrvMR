@@ -9,12 +9,13 @@ namespace Angular.Core.Modals
     {
         public Territory()
         {
+            TerritoryID = Guid.NewGuid();
             this.Employees = new List<Employee>();
         }
 
-        public string TerritoryID { get; set; }
+        public Guid TerritoryID { get; set; }
         public string TerritoryDescription { get; set; }
-        public int RegionID { get; set; }
+        public Guid RegionID { get; set; }
         public virtual Region Region { get; set; }
         public virtual ICollection<Employee> Employees { get; set; }
     }

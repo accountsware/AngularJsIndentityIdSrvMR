@@ -9,10 +9,11 @@ namespace Angular.Core.Modals
     {
         public Supplier()
         {
+            SupplierID = Guid.NewGuid();
             this.Products = new List<Product>();
         }
 
-        public int SupplierID { get; set; }
+        public Guid SupplierID { get; set; }
         public string CompanyName { get; set; }
         public string ContactName { get; set; }
         public string ContactTitle { get; set; }

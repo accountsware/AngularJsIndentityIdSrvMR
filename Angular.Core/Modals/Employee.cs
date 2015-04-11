@@ -9,12 +9,12 @@ namespace Angular.Core.Modals
     {
         public Employee()
         {
-            this.Employees1 = new List<Employee>();
+            EmployeeID = Guid.NewGuid();
             this.Orders = new List<Order>();
             this.Territories = new List<Territory>();
         }
 
-        public int EmployeeID { get; set; }
+        public Guid EmployeeID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string Title { get; set; }
@@ -33,7 +33,7 @@ namespace Angular.Core.Modals
         public Nullable<int> ReportsTo { get; set; }
         public string PhotoPath { get; set; }
         public virtual ICollection<Employee> Employees1 { get; set; }
-        public virtual Employee Employee1 { get; set; }
+        
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Territory> Territories { get; set; }
     }
