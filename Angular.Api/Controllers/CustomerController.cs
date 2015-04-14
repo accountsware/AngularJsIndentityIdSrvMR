@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Angular.Core.IRepository.Base;
 using Angular.Core.IServices;
+using Angular.Core.Modals;
 
 namespace Angular.Api.Controllers
 {
@@ -21,5 +22,13 @@ namespace Angular.Api.Controllers
             _unitOfWorkAsync = unitOfWorkAsync;
             _customerService = customerService;
         }
+
+        [HttpGet]
+        
+        public IQueryable<Customer> GetCustomer()
+        {
+            return _customerService.Queryable();
+        }
+
     }
 }
