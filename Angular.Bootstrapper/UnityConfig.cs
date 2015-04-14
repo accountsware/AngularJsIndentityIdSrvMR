@@ -1,6 +1,10 @@
 using System;
-using Angular.Data;
+
+using Angular.Core.IRepository.Base;
+using Angular.Core.Modals;
+
 using Angular.Data.Context;
+using Angular.Data.Repository.@base;
 using Microsoft.Practices.Unity;
 
 namespace Angular.Bootstrapper
@@ -37,8 +41,9 @@ namespace Angular.Bootstrapper
 
             // TODO: Register your types here
             container.RegisterType<AngularContext>(new PerResolveLifetimeManager());
-            //container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
-            //container.RegisterType<IUserStore<User, Guid>, UserRepository>(new HierarchicalLifetimeManager());
+           // container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
+            container.RegisterType<IRepositoryAsync<Customer>, Repository<Customer>>();
+            container.RegisterType<IRepositoryAsync<Product>, Repository<Product>>();
             //container.RegisterType<IRoleStore<Role, Guid>, RoleRepository>(new HierarchicalLifetimeManager());
             //container.RegisterType<IUserRepository, UserRepository>(new HierarchicalLifetimeManager());
             //container.RegisterType<IPersonRepository, PersonRepository>(new HierarchicalLifetimeManager());
@@ -46,7 +51,7 @@ namespace Angular.Bootstrapper
             //container.RegisterType<IUserService, UserService>(new HierarchicalLifetimeManager());
             //container.RegisterType<IUserManager, ApplicationUserManager>(new HierarchicalLifetimeManager());
             //container.RegisterType<IRoleManager, ApplicationRoleManager>(new HierarchicalLifetimeManager());
-            
+
         }
     }
 }

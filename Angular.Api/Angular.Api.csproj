@@ -106,6 +106,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +119,10 @@
     <ProjectReference Include="..\Angular.Common\Angular.Common.csproj">
       <Project>{83604bb2-2d75-40bb-be77-4f5569ad0ad2}</Project>
       <Name>Angular.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Angular.Core\Angular.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>Angular.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Angular.Data\Angular.Data.csproj">
       <Project>{4C273CFC-EA24-4A77-A0A6-53FEEE45374A}</Project>

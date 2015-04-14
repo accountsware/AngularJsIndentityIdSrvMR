@@ -55,6 +55,7 @@
     <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
     <Compile Include="IRepository\ICustomerRepository.cs" />
     <Compile Include="IServices\Base\IService.cs" />
+    <Compile Include="IServices\ICustomerService.cs" />
     <Compile Include="Modals\Application Message.cs" />
     <Compile Include="Modals\Base\Entity.cs" />
     <Compile Include="Modals\Base\IObjectState.cs" />
