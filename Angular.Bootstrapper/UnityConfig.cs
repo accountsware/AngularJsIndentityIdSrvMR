@@ -1,10 +1,12 @@
 using System;
-
+using Angular.Core.IDataService;
 using Angular.Core.IRepository.Base;
+using Angular.Core.IServices;
 using Angular.Core.Modals;
 
 using Angular.Data.Context;
 using Angular.Data.Repository.@base;
+using Angular.Services;
 using Microsoft.Practices.Unity;
 
 namespace Angular.Bootstrapper
@@ -41,10 +43,14 @@ namespace Angular.Bootstrapper
 
             // TODO: Register your types here
             container.RegisterType<AngularContext>(new PerResolveLifetimeManager());
-           // container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
-            container.RegisterType<IRepositoryAsync<Customer>, Repository<Customer>>();
-            container.RegisterType<IRepositoryAsync<Product>, Repository<Product>>();
-            //container.RegisterType<IRoleStore<Role, Guid>, RoleRepository>(new HierarchicalLifetimeManager());
+            container.RegisterType<IDataContext, AngularContext>(new PerResolveLifetimeManager());
+            container.RegisterType<IDataContextAsync, AngularContext>(new PerResolveLifetimeManager());
+            container.RegisterType<IUnitOfWork, UnitOfWork>(new PerResolveLifetimeManager());
+            container.RegisterType<IUnitOfWorkAsync, UnitOfWork>(new PerResolveLifetimeManager());
+            container.RegisterType<IRepositoryAsync<Customer>, Repository<Customer>>(new HierarchicalLifetimeManager());
+            container.RegisterType<IRepositoryAsync<Product>, Repository<Product>>(new HierarchicalLifetimeManager());
+            container.RegisterType<ICustomerService, CustomerService>(new HierarchicalLifetimeManager());
+            // container.RegisterType<IRoleStore<Role, Guid>, RoleRepository>(new HierarchicalLifetimeManager());
             //container.RegisterType<IUserRepository, UserRepository>(new HierarchicalLifetimeManager());
             //container.RegisterType<IPersonRepository, PersonRepository>(new HierarchicalLifetimeManager());
             //container.RegisterType<IPersonService, PersonService>(new HierarchicalLifetimeManager());

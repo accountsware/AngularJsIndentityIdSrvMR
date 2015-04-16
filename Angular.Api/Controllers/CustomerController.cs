@@ -10,22 +10,23 @@ using Angular.Core.Modals;
 
 namespace Angular.Api.Controllers
 {
+    [RoutePrefix("api/customer")]
     public class CustomerController : ApiController
     {
         private readonly ICustomerService _customerService;
-        private readonly IUnitOfWorkAsync _unitOfWorkAsync;
+      //  private readonly IUnitOfWorkAsync _unitOfWorkAsync;
 
         public CustomerController(
             IUnitOfWorkAsync unitOfWorkAsync,
             ICustomerService customerService)
         {
-            _unitOfWorkAsync = unitOfWorkAsync;
+       //     _unitOfWorkAsync = unitOfWorkAsync;
             _customerService = customerService;
         }
-
+        [Route("GetAll")]
         [HttpGet]
         
-        public IQueryable<Customer> GetCustomer()
+        public IQueryable<Customer> GetCustomers()
         {
             return _customerService.Queryable();
         }
