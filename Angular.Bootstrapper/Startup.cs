@@ -42,8 +42,8 @@ namespace Angular.Bootstrapper
 
           var resolver = new UnityDependencyResolver(container);
             config.DependencyResolver = resolver;
-            
-            
+
+
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();

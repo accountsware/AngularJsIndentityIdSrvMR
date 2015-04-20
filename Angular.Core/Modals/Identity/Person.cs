@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Angular.Core.Modals
+namespace Angular.Core.Modals.Identity
 {
     public class Person
     {

@@ -56,29 +56,36 @@
     <Compile Include="IRepository\ICustomerRepository.cs" />
     <Compile Include="IServices\Base\IService.cs" />
     <Compile Include="IServices\ICustomerService.cs" />
-    <Compile Include="Modals\Application Message.cs" />
     <Compile Include="Modals\Base\Entity.cs" />
     <Compile Include="Modals\Base\IObjectState.cs" />
     <Compile Include="Modals\Base\ObjectState.cs" />
     <Compile Include="Modals\Category.cs" />
     <Compile Include="Modals\Customer.cs" />
     <Compile Include="Modals\Employee.cs" />
+    <Compile Include="Modals\Identity\LinkedAccountClaim.cs" />
     <Compile Include="Modals\Order.cs" />
     <Compile Include="Modals\OrderDetail.cs" />
-    <Compile Include="Modals\Person.cs" />
+    <Compile Include="Modals\Identity\PasswordResetSecret.cs" />
+    <Compile Include="Modals\Identity\Person.cs" />
     <Compile Include="Modals\Product.cs" />
     <Compile Include="Modals\Region.cs" />
-    <Compile Include="Modals\Role.cs" />
+    <Compile Include="Modals\Identity\Role.cs" />
     <Compile Include="Modals\Shipper.cs" />
     <Compile Include="Modals\Supplier.cs" />
     <Compile Include="Modals\Territory.cs" />
-    <Compile Include="Modals\User.cs" />
-    <Compile Include="Modals\UserClaim.cs" />
-    <Compile Include="Modals\UserLogin.cs" />
-    <Compile Include="Modals\UserRole.cs" />
+    <Compile Include="Modals\Identity\TwoFactorAuthMode.cs" />
+    <Compile Include="Modals\Identity\TwoFactorAuthToken.cs" />
+    <Compile Include="Modals\Identity\UserAccount.cs" />
+    <Compile Include="Modals\Identity\UserCertificate.cs" />
+    <Compile Include="Modals\Identity\UserClaim.cs" />
+    <Compile Include="Modals\Identity\LinkedAccount.cs" />
+    <Compile Include="Modals\Identity\UserRole.cs" />
+    <Compile Include="Modals\Identity\VerificationKeyPurpose.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Modals\CustomerOrder\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>

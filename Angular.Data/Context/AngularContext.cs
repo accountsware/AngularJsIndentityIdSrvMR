@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Reflection;
+using Angular.Core.Modals.Identity;
 using Angular.Data.Mappings;
 using Angular.Core.Modals;
 
@@ -10,7 +11,7 @@ namespace Angular.Data.Context
     public class AngularContext : DataContext
     {
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<UserAccount> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Person> Persons { get; set; }
         public DbSet<Category> Categories { get; set; }

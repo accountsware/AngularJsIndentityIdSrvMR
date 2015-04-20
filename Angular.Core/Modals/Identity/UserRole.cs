@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Angular.Core.Modals
+namespace Angular.Core.Modals.Identity
 {
     public class UserRole
     {
@@ -8,7 +8,7 @@ namespace Angular.Core.Modals
 
         public virtual Guid UserId { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual UserAccount User { get; set; }
 
         public virtual Role Role { get; set; }
     }
