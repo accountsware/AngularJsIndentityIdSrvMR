@@ -6,8 +6,8 @@ namespace Angular.Core.Modals.Identity
 {
     public class UserAccount
     {
-        public virtual Guid ID { get; protected internal set; }
-
+        #region Properties
+        public virtual Guid Id { get; protected internal set; }
 
         public virtual string Tenant { get; protected internal set; }
 
@@ -61,6 +61,8 @@ namespace Angular.Core.Modals.Identity
         [StringLength(200)]
         public virtual string HashedPassword { get; protected internal set; }
 
+        #endregion Properties
+
         public virtual ICollection<UserClaim> ClaimCollection { get; set; }
         public  IEnumerable<UserClaim> Claims
         {
@@ -68,7 +70,7 @@ namespace Angular.Core.Modals.Identity
         }
         protected internal  void AddClaim(UserClaim item)
         {
-            ClaimCollection.Add(new UserClaim { Type = item.Type, Value = item.Value });
+            ClaimCollection.Add(new UserClaim {  Type = item.Type, Value = item.Value, UserId = this.Id});
         }
         protected internal  void RemoveClaim(UserClaim item)
         {
@@ -82,7 +84,7 @@ namespace Angular.Core.Modals.Identity
         }
         protected internal  void AddLinkedAccount(LinkedAccount item)
         {
-            LinkedAccountCollection.Add(new LinkedAccount { ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, LastLogin = item.LastLogin });
+            LinkedAccountCollection.Add(new LinkedAccount { ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, LastLogin = item.LastLogin, UserId  = this.Id});
         }
         protected internal  void RemoveLinkedAccount(LinkedAccount item)
         {
@@ -96,7 +98,7 @@ namespace Angular.Core.Modals.Identity
         }
         protected internal  void AddLinkedAccountClaim(LinkedAccountClaim item)
         {
-            LinkedAccountClaimCollection.Add(new LinkedAccountClaim {  ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, Type = item.Type, Value = item.Value });
+            LinkedAccountClaimCollection.Add(new LinkedAccountClaim {  ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, Type = item.Type, Value = item.Value, UserId = this.Id});
         }
         protected internal  void RemoveLinkedAccountClaim(LinkedAccountClaim item)
         {
@@ -110,7 +112,7 @@ namespace Angular.Core.Modals.Identity
         }
         protected internal  void AddCertificate(UserCertificate item)
         {
-            UserCertificateCollection.Add(new UserCertificate { Thumbprint = item.Thumbprint, Subject = item.Subject });
+            UserCertificateCollection.Add(new UserCertificate { Thumbprint = item.Thumbprint, Subject = item.Subject, UserId = this.Id});
         }
         protected internal  void RemoveCertificate(UserCertificate item)
         {
@@ -125,7 +127,7 @@ namespace Angular.Core.Modals.Identity
 
         protected internal void AddTwoFactorAuthToken(TwoFactorAuthToken item)
         {
-            TwoFactorAuthTokenCollection.Add(new TwoFactorAuthToken { Token = item.Token, Issued = item.Issued });
+            TwoFactorAuthTokenCollection.Add(new TwoFactorAuthToken { Token = item.Token, Issued = item.Issued, UserId = this.Id});
         }
         protected internal void RemoveTwoFactorAuthToken(TwoFactorAuthToken item)
         {
@@ -139,7 +141,7 @@ namespace Angular.Core.Modals.Identity
         }
         protected internal  void AddPasswordResetSecret(PasswordResetSecret item)
         {
-            PasswordResetSecretCollection.Add(new PasswordResetSecret { PasswordResetSecretID = item.PasswordResetSecretID, Question = item.Question, Answer = item.Answer });
+            PasswordResetSecretCollection.Add(new PasswordResetSecret { PasswordResetSecretID = item.PasswordResetSecretID, Question = item.Question, Answer = item.Answer, UserId = this.Id});
         }
         protected internal void RemovePasswordResetSecret(PasswordResetSecret item)
         {

@@ -15,5 +15,8 @@ namespace Angular.Core.Modals.Identity
         public virtual string Token { get; protected internal set; }
 
         public virtual DateTime Issued { get; protected internal set; }
+        public Guid UserId { get; set; }
+
+        public UserAccount User { get; set; }
     }
 }

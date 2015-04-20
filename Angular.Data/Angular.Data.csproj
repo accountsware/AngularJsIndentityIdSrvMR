@@ -65,13 +65,11 @@
     <Compile Include="Mappings\OrderMap.cs" />
     <Compile Include="Mappings\ProductMap.cs" />
     <Compile Include="Mappings\RegionMap.cs" />
-    <Compile Include="Mappings\RoleMap.cs" />
     <Compile Include="Mappings\ShipperMap.cs" />
     <Compile Include="Mappings\SupplierMap.cs" />
     <Compile Include="Mappings\TerritoryMap.cs" />
     <Compile Include="Mappings\UserLoginMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
-    <Compile Include="Mappings\UserRoleMap.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModalFactory\ModalFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,7 +12,7 @@ namespace Angular.Data.Context
     {
 
         public DbSet<UserAccount> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
+       
         public DbSet<Person> Persons { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -45,8 +45,6 @@ namespace Angular.Data.Context
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Configurations.Add(new UserMap());
-            modelBuilder.Configurations.Add(new RoleMap());
-            modelBuilder.Configurations.Add(new UserRoleMap());
             modelBuilder.Configurations.Add(new UserLoginMap());
             modelBuilder.Configurations.Add(new CategoryMap());
             modelBuilder.Configurations.Add(new CustomerMap());

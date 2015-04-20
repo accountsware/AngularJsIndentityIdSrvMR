@@ -19,5 +19,8 @@ namespace Angular.Core.Modals.Identity
         [StringLength(150)]
         [Required]
         public virtual string Answer { get; protected internal set; }
+        public Guid UserId { get; set; }
+
+        public UserAccount User { get; set; }
     }
 }

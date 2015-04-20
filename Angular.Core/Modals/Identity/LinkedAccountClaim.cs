@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Angular.Core.Modals.Identity
 {
@@ -16,5 +17,8 @@ namespace Angular.Core.Modals.Identity
         [StringLength(150)]
         [Required]
         public virtual string Value { get; protected internal set; }
+        public Guid UserId { get; set; }
+
+        public UserAccount User { get; set; }
     }
 }
