@@ -1,11 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Core.Modals.Identity
 {
-    public class UserAccount
+    public class UserAccount: Entity
+
     {
+        public UserAccount()
+        {
+       //     Id = Guid.NewGuid();
+
+        }
+
         #region Properties
         public virtual Guid Id { get; protected internal set; }
 

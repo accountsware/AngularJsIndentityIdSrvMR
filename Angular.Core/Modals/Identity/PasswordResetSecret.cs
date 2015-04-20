@@ -5,10 +5,11 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Core.Modals.Identity
 {
-    public class PasswordResetSecret
+    public class PasswordResetSecret : Entity
     {
         public virtual Guid PasswordResetSecretID { get; protected internal set; }
 

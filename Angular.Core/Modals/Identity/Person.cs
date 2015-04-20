@@ -1,8 +1,9 @@
 ﻿using System;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Core.Modals.Identity
 {
-    public class Person
+    public class Person : Entity
     {
         public Person()
         {

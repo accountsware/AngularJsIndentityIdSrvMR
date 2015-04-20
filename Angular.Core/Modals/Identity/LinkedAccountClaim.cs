@@ -1,10 +1,13 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Core.Modals.Identity
 {
-    public class LinkedAccountClaim
+    public class LinkedAccountClaim : Entity
     {
+
+        public Guid Id { get; set; }
         [StringLength(30)]
         [Required]
         public virtual string ProviderName { get; protected internal set; }

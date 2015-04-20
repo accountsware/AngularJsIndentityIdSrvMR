@@ -5,11 +5,14 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Core.Modals.Identity
 {
-    public class UserCertificate
+    public class UserCertificate : Entity
     {
+        public Guid Id { get; set; }
+
         [StringLength(150)]
         [Required]
         public virtual string Thumbprint { get; protected internal set; }

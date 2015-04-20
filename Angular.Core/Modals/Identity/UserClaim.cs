@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
+using Angular.Core.Modals.Base;
 
 namespace Angular.Core.Modals.Identity
 {
-    public class UserClaim
+    public class UserClaim : Entity
     {
         public UserClaim()
         {
@@ -13,6 +14,7 @@ namespace Angular.Core.Modals.Identity
 
         public UserClaim(Guid userId, string type, string value  )
         {
+            Id = Guid.NewGuid();
             if (String.IsNullOrWhiteSpace(type)) throw new ArgumentNullException("type");
             if (String.IsNullOrWhiteSpace(value)) throw new ArgumentNullException("value");
             if (string.IsNullOrWhiteSpace(userId.ToString())) throw new ArgumentNullException("userId");
@@ -23,6 +25,8 @@ namespace Angular.Core.Modals.Identity
             this.UserId = userId;
         }
 
+
+        public Guid Id { get; set; }
         [StringLength(150)]
         [Required]
         public virtual string Type { get; protected internal set; }
