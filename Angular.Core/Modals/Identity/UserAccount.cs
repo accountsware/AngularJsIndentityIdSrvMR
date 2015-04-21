@@ -10,64 +10,64 @@ namespace Angular.Core.Modals.Identity
     {
         public UserAccount()
         {
-       //     Id = Guid.NewGuid();
+       
 
         }
 
         #region Properties
-        public virtual Guid Id { get; protected internal set; }
+        public virtual Guid ID { get; set; }
 
-        public virtual string Tenant { get; protected internal set; }
+        public virtual string Tenant { get; set; }
 
         // If email address is being used as the username then this property
         // should adhere to maximim length constraint for valid email addresses.
         // See Dominic Sayers answer at SO: http://stackoverflow.com/a/574698/99240
         [StringLength(254)]
         [Required]
-        public virtual string Username { get; protected internal set; }
+        public virtual string Username { get; set; }
 
-        public virtual DateTime Created { get; protected internal set; }
-        public virtual DateTime LastUpdated { get; protected internal set; }
-        public virtual bool IsAccountClosed { get; protected internal set; }
-        public virtual DateTime? AccountClosed { get; protected internal set; }
+        public virtual DateTime Created { get; set; }
+        public virtual DateTime LastUpdated { get; set; }
+        public virtual bool IsAccountClosed { get; set; }
+        public virtual DateTime? AccountClosed { get; set; }
 
-        public virtual bool IsLoginAllowed { get; protected internal set; }
-        public virtual DateTime? LastLogin { get; protected internal set; }
-        public virtual DateTime? LastFailedLogin { get; protected internal set; }
-        public virtual int FailedLoginCount { get; protected internal set; }
+        public virtual bool IsLoginAllowed { get; set; }
+        public virtual DateTime? LastLogin { get; set; }
+        public virtual DateTime? LastFailedLogin { get; set; }
+        public virtual int FailedLoginCount { get; set; }
 
-        public virtual DateTime? PasswordChanged { get; protected internal set; }
-        public virtual bool RequiresPasswordReset { get; protected internal set; }
+        public virtual DateTime? PasswordChanged { get; set; }
+        public virtual bool RequiresPasswordReset { get; set; }
 
         // Maximum length of a valid email address is 254 characters.
         // See Dominic Sayers answer at SO: http://stackoverflow.com/a/574698/99240
         [EmailAddress]
         [StringLength(254)]
-        public virtual string Email { get; protected internal set; }
-        public virtual bool IsAccountVerified { get; protected internal set; }
+        public virtual string Email { get; set; }
+        public virtual bool IsAccountVerified { get; set; }
 
-        public virtual DateTime? LastFailedPasswordReset { get; protected internal set; }
-        public virtual int FailedPasswordResetCount { get; protected internal set; }
+        public virtual DateTime? LastFailedPasswordReset { get; set; }
+        public virtual int FailedPasswordResetCount { get; set; }
 
         [StringLength(100)]
-        public virtual string MobileCode { get; protected internal set; }
-        public virtual DateTime? MobileCodeSent { get; protected internal set; }
+        public virtual string MobileCode { get; set; }
+        public virtual DateTime? MobileCodeSent { get; set; }
         [StringLength(20)]
-        public virtual string MobilePhoneNumber { get; protected internal set; }
-        public virtual DateTime? MobilePhoneNumberChanged { get; protected internal set; }
+        public virtual string MobilePhoneNumber { get; set; }
+        public virtual DateTime? MobilePhoneNumberChanged { get; set; }
 
-        public virtual TwoFactorAuthMode AccountTwoFactorAuthMode { get; protected internal set; }
-        public virtual TwoFactorAuthMode CurrentTwoFactorAuthStatus { get; protected internal set; }
+        public virtual TwoFactorAuthMode AccountTwoFactorAuthMode { get; set; }
+        public virtual TwoFactorAuthMode CurrentTwoFactorAuthStatus { get; set; }
 
         [StringLength(100)]
-        public virtual string VerificationKey { get; protected internal set; }
-        public virtual VerificationKeyPurpose? VerificationPurpose { get; protected internal set; }
-        public virtual DateTime? VerificationKeySent { get; protected internal set; }
+        public virtual string VerificationKey { get; set; }
+        public virtual VerificationKeyPurpose? VerificationPurpose { get; set; }
+        public virtual DateTime? VerificationKeySent { get; set; }
         [StringLength(100)]
-        public virtual string VerificationStorage { get; protected internal set; }
+        public virtual string VerificationStorage { get; set; }
 
         [StringLength(200)]
-        public virtual string HashedPassword { get; protected internal set; }
+        public virtual string HashedPassword { get; set; }
 
         #endregion Properties
 
@@ -76,11 +76,11 @@ namespace Angular.Core.Modals.Identity
         {
             get { return ClaimCollection; }
         }
-        protected internal  void AddClaim(UserClaim item)
+        public  void AddClaim(UserClaim item)
         {
-            ClaimCollection.Add(new UserClaim {  Type = item.Type, Value = item.Value, UserId = this.Id});
+            ClaimCollection.Add(new UserClaim {  Type = item.Type, Value = item.Value, UserId = this.ID});
         }
-        protected internal  void RemoveClaim(UserClaim item)
+        public  void RemoveClaim(UserClaim item)
         {
             ClaimCollection.Remove((UserClaim)item);
         }
@@ -90,11 +90,11 @@ namespace Angular.Core.Modals.Identity
         {
             get { return LinkedAccountCollection; }
         }
-        protected internal  void AddLinkedAccount(LinkedAccount item)
+        public  void AddLinkedAccount(LinkedAccount item)
         {
-            LinkedAccountCollection.Add(new LinkedAccount { ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, LastLogin = item.LastLogin, UserId  = this.Id});
+            LinkedAccountCollection.Add(new LinkedAccount { ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, LastLogin = item.LastLogin, UserId  = this.ID});
         }
-        protected internal  void RemoveLinkedAccount(LinkedAccount item)
+        public  void RemoveLinkedAccount(LinkedAccount item)
         {
             LinkedAccountCollection.Remove((LinkedAccount)item);
         }
@@ -104,11 +104,11 @@ namespace Angular.Core.Modals.Identity
         {
             get { return LinkedAccountClaimCollection; }
         }
-        protected internal  void AddLinkedAccountClaim(LinkedAccountClaim item)
+        public  void AddLinkedAccountClaim(LinkedAccountClaim item)
         {
-            LinkedAccountClaimCollection.Add(new LinkedAccountClaim {  ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, Type = item.Type, Value = item.Value, UserId = this.Id});
+            LinkedAccountClaimCollection.Add(new LinkedAccountClaim {  ProviderName = item.ProviderName, ProviderAccountID = item.ProviderAccountID, Type = item.Type, Value = item.Value, UserId = this.ID});
         }
-        protected internal  void RemoveLinkedAccountClaim(LinkedAccountClaim item)
+        public  void RemoveLinkedAccountClaim(LinkedAccountClaim item)
         {
             LinkedAccountClaimCollection.Remove((LinkedAccountClaim)item);
         }
@@ -118,11 +118,11 @@ namespace Angular.Core.Modals.Identity
         {
             get { return UserCertificateCollection; }
         }
-        protected internal  void AddCertificate(UserCertificate item)
+        public  void AddCertificate(UserCertificate item)
         {
-            UserCertificateCollection.Add(new UserCertificate { Thumbprint = item.Thumbprint, Subject = item.Subject, UserId = this.Id});
+            UserCertificateCollection.Add(new UserCertificate { Thumbprint = item.Thumbprint, Subject = item.Subject, UserId = this.ID});
         }
-        protected internal  void RemoveCertificate(UserCertificate item)
+        public  void RemoveCertificate(UserCertificate item)
         {
             UserCertificateCollection.Remove((UserCertificate)item);
         }
@@ -133,11 +133,11 @@ namespace Angular.Core.Modals.Identity
             get { return TwoFactorAuthTokenCollection; }
         }
 
-        protected internal void AddTwoFactorAuthToken(TwoFactorAuthToken item)
+        public void AddTwoFactorAuthToken(TwoFactorAuthToken item)
         {
-            TwoFactorAuthTokenCollection.Add(new TwoFactorAuthToken { Token = item.Token, Issued = item.Issued, UserId = this.Id});
+            TwoFactorAuthTokenCollection.Add(new TwoFactorAuthToken { Token = item.Token, Issued = item.Issued, UserId = this.ID});
         }
-        protected internal void RemoveTwoFactorAuthToken(TwoFactorAuthToken item)
+        public void RemoveTwoFactorAuthToken(TwoFactorAuthToken item)
         {
             TwoFactorAuthTokenCollection.Remove((TwoFactorAuthToken)item);
         }
@@ -147,11 +147,11 @@ namespace Angular.Core.Modals.Identity
         {
             get { return PasswordResetSecretCollection; }
         }
-        protected internal  void AddPasswordResetSecret(PasswordResetSecret item)
+        public  void AddPasswordResetSecret(PasswordResetSecret item)
         {
-            PasswordResetSecretCollection.Add(new PasswordResetSecret { PasswordResetSecretID = item.PasswordResetSecretID, Question = item.Question, Answer = item.Answer, UserId = this.Id});
+            PasswordResetSecretCollection.Add(new PasswordResetSecret { PasswordResetSecretID = item.PasswordResetSecretID, Question = item.Question, Answer = item.Answer, UserId = this.ID});
         }
-        protected internal void RemovePasswordResetSecret(PasswordResetSecret item)
+        public void RemovePasswordResetSecret(PasswordResetSecret item)
         {
             PasswordResetSecretCollection.Remove((PasswordResetSecret)item);
         }

@@ -21,11 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Core", "Angular.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.MVC", "..\Angular\Angular.MVC\Angular.MVC.csproj", "{9F56E0F9-323F-4FB6-8A11-E3C8EF0C3F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.UserManagement", "Angular.UserManagement\Angular.UserManagement.csproj", "{3A017942-54D8-463D-8857-B5C7D0054674}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthInfrastructure", "Angular.AuthInfrastructure\Angular.AuthInfrastructure.csproj", "{717116F3-EDB4-4BFA-B15A-16E342053ED5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthServer", "Angular.AuthServer\Angular.AuthServer.csproj", "{2CE6996C-98E7-47EA-BF69-1765793C475A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.UserManagement", "BrockAllen.MembershipReboot\Angular.UserManagement.csproj", "{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,10 +69,6 @@ Global
 		{9F56E0F9-323F-4FB6-8A11-E3C8EF0C3F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F56E0F9-323F-4FB6-8A11-E3C8EF0C3F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F56E0F9-323F-4FB6-8A11-E3C8EF0C3F36}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A017942-54D8-463D-8857-B5C7D0054674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A017942-54D8-463D-8857-B5C7D0054674}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A017942-54D8-463D-8857-B5C7D0054674}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A017942-54D8-463D-8857-B5C7D0054674}.Release|Any CPU.Build.0 = Release|Any CPU
 		{717116F3-EDB4-4BFA-B15A-16E342053ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{717116F3-EDB4-4BFA-B15A-16E342053ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{717116F3-EDB4-4BFA-B15A-16E342053ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +77,10 @@ Global
 		{2CE6996C-98E7-47EA-BF69-1765793C475A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE6996C-98E7-47EA-BF69-1765793C475A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE6996C-98E7-47EA-BF69-1765793C475A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

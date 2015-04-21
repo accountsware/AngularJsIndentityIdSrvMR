@@ -12,28 +12,28 @@ namespace Angular.Core.Modals.Identity
         {
         }
 
-        public UserClaim(Guid userId, string type, string value  )
+        public UserClaim(string type, string value  )
         {
             Id = Guid.NewGuid();
             if (String.IsNullOrWhiteSpace(type)) throw new ArgumentNullException("type");
             if (String.IsNullOrWhiteSpace(value)) throw new ArgumentNullException("value");
-            if (string.IsNullOrWhiteSpace(userId.ToString())) throw new ArgumentNullException("userId");
+            
 
 
             this.Type = type;
             this.Value = value;
-            this.UserId = userId;
+            
         }
 
 
         public Guid Id { get; set; }
         [StringLength(150)]
         [Required]
-        public virtual string Type { get; protected internal set; }
+        public virtual string Type { get; set; }
 
         [StringLength(150)]
         [Required]
-        public virtual string Value { get; protected internal set; }
+        public virtual string Value { get; set; }
 
         public Guid UserId { get; set; }
 
@@ -89,7 +89,7 @@ namespace Angular.Core.Modals.Identity
 
         public void Add(string type, string value)
         {
-            this.Add(new UserClaim(Guid.NewGuid(),type, value));
+            this.Add(new UserClaim(type, value));
         }
     }
 }

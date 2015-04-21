@@ -15,10 +15,10 @@ namespace Angular.Core.Modals.Identity
 
         [StringLength(150)]
         [Required]
-        public virtual string Thumbprint { get; protected internal set; }
+        public virtual string Thumbprint { get; set; }
 
         [StringLength(250)]
-        public virtual string Subject { get; protected internal set; }
+        public virtual string Subject { get; set; }
 
         public Guid UserId { get; set; }
 

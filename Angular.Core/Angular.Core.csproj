@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IHandlers\DelegateCommandHandler.cs" />
+    <Compile Include="IHandlers\DelegateEventHandler.cs" />
+    <Compile Include="IHandlers\ICommand.cs" />
+    <Compile Include="IHandlers\ICommandHandler.cs" />
     <Compile Include="IHandlers\IEvent.cs" />
     <Compile Include="IHandlers\IEventBus.cs" />
     <Compile Include="IHandlers\IEventSource.cs" />

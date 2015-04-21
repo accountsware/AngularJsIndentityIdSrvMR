@@ -11,15 +11,15 @@ namespace Angular.Core.Modals.Identity
 {
     public class PasswordResetSecret : Entity
     {
-        public virtual Guid PasswordResetSecretID { get; protected internal set; }
+        public virtual Guid PasswordResetSecretID { get; set; }
 
         [StringLength(150)]
         [Required]
-        public virtual string Question { get; protected internal set; }
+        public virtual string Question { get; set; }
 
         [StringLength(150)]
         [Required]
-        public virtual string Answer { get; protected internal set; }
+        public virtual string Answer { get; set; }
         public Guid UserId { get; set; }
 
         public UserAccount User { get; set; }
