@@ -26,7 +26,7 @@ namespace Angular.Core.Modals.Identity
         }
 
 
-        public Guid Id { get; set; }
+        public virtual Guid Id { get; set; }
         [StringLength(150)]
         [Required]
         public virtual string Type { get; set; }

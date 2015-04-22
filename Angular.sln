@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthInfrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthServer", "Angular.AuthServer\Angular.AuthServer.csproj", "{2CE6996C-98E7-47EA-BF69-1765793C475A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.UserManagement", "BrockAllen.MembershipReboot\Angular.UserManagement.csproj", "{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.UserManagement", "Angular.UserManagement\Angular.UserManagement.csproj", "{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

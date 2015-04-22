@@ -43,16 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IHandlers\DelegateCommandHandler.cs" />
-    <Compile Include="IHandlers\DelegateEventHandler.cs" />
-    <Compile Include="IHandlers\ICommand.cs" />
-    <Compile Include="IHandlers\ICommandHandler.cs" />
-    <Compile Include="IHandlers\IEvent.cs" />
-    <Compile Include="IHandlers\IEventBus.cs" />
-    <Compile Include="IHandlers\IEventSource.cs" />
-    <Compile Include="IHandlers\IEventHandler.cs" />
-    <Compile Include="IIdentityManager\IRoleManager.cs" />
-    <Compile Include="IIdentityManager\IUserManager.cs" />
+    <Compile Include="CommandEventHandlers\CommandBus.cs" />
+    <Compile Include="CommandEventHandlers\DelegateCommandHandler.cs" />
+    <Compile Include="CommandEventHandlers\DelegateEventHandler.cs" />
+    <Compile Include="CommandEventHandlers\EventBus.cs" />
+    <Compile Include="CommandEventHandlers\GenericMethodActionBuilder.cs" />
+    <Compile Include="CommandEventHandlers\ICommand.cs" />
+    <Compile Include="CommandEventHandlers\ICommandBus.cs" />
+    <Compile Include="CommandEventHandlers\ICommandHandler.cs" />
+    <Compile Include="CommandEventHandlers\IEvent.cs" />
+    <Compile Include="CommandEventHandlers\IEventBus.cs" />
+    <Compile Include="CommandEventHandlers\IEventSource.cs" />
+    <Compile Include="CommandEventHandlers\IEventHandler.cs" />
+    <Compile Include="IIdentity\ICrypto.cs" />
+    <Compile Include="IIdentity\IRoleManager.cs" />
+    <Compile Include="IIdentity\IUserManager.cs" />
     <Compile Include="IDataService\IDataContext.cs" />
     <Compile Include="IDataService\IDataContextAsync.cs" />
     <Compile Include="IDataService\IQueryFluent.cs" />
@@ -62,6 +67,7 @@
     <Compile Include="IRepository\Base\IUnitOfWork.cs" />
     <Compile Include="IRepository\Base\IUnitOfWorkAsync.cs" />
     <Compile Include="IRepository\ICustomerRepository.cs" />
+    <Compile Include="IRepository\IUserAccountRepository.cs" />
     <Compile Include="IServices\Base\IService.cs" />
     <Compile Include="IServices\ICustomerService.cs" />
     <Compile Include="Modals\Base\Entity.cs" />
