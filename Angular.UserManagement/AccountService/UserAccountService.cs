@@ -18,7 +18,7 @@ namespace BrockAllen.MembershipReboot
     public class UserAccountService : IEventSource
         
     {
-        public MembershipRebootConfiguration<UserAccount> Configuration { get; set; }
+        public MembershipRebootConfiguration Configuration { get; set; }
 
         EventBusUserAccountRepository userRepository;
 
@@ -27,11 +27,11 @@ namespace BrockAllen.MembershipReboot
         Lazy<AggregateValidator<UserAccount>> passwordValidator;
 
         public UserAccountService(IUserAccountRepository userRepository)
-            : this(new MembershipRebootConfiguration<UserAccount>(), userRepository)
+            : this(new MembershipRebootConfiguration(), userRepository)
         {
         }
 
-        public UserAccountService(MembershipRebootConfiguration<UserAccount> configuration, IUserAccountRepository userRepository)
+        public UserAccountService(MembershipRebootConfiguration configuration, IUserAccountRepository userRepository)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
             if (userRepository == null) throw new ArgumentNullException("userRepository");

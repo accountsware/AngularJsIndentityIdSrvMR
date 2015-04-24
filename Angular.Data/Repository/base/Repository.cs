@@ -43,6 +43,12 @@ namespace Angular.Data.Repository.@base
             
         }
 
+
+        public TEntity Create()
+        {
+            return _dbSet.Create<TEntity>();
+        }
+
         public virtual TEntity Find(params object[] keyValues)
         {
             return _dbSet.Find(keyValues);

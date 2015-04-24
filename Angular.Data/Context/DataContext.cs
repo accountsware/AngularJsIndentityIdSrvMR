@@ -21,8 +21,8 @@ namespace Angular.Data.Context
             : base("data source=.;initial catalog=Angular;integrated security=True")
         {
             _instanceId = Guid.NewGuid();
-            Configuration.LazyLoadingEnabled = false;
-            Configuration.ProxyCreationEnabled = false;
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
         }
 
         public Guid InstanceId { get { return _instanceId; } }

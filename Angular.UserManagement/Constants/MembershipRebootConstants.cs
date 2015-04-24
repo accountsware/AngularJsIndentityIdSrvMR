@@ -19,11 +19,11 @@ namespace BrockAllen.MembershipReboot
         {
             internal const bool MultiTenant = false;
             internal const string DefaultTenant = "default";
-            internal const bool EmailIsUsername = false;
+            internal const bool EmailIsUsername = true;
             internal const bool EmailIsUnique = true;
-            internal const bool UsernamesUniqueAcrossTenants = false;
+            internal const bool UsernamesUniqueAcrossTenants = true;
             internal const bool RequireAccountVerification = true;
-            internal const bool AllowLoginAfterAccountCreation = true;
+            internal const bool AllowLoginAfterAccountCreation = false;
             internal const int AccountLockoutFailedLoginAttempts = 5;
             internal const string AccountLockoutDuration = "00:05:00";
             internal const bool AllowAccountDeletion = true;
@@ -44,7 +44,7 @@ namespace BrockAllen.MembershipReboot
         {
             internal static readonly TimeSpan TwoFactorAuthTokenLifetime = TimeSpan.FromMinutes(10);
             internal const int DefaultPersistentCookieDays = UserAccount.TwoFactorAuthTokenDurationDays;
-            internal const string CookieBasedTwoFactorAuthPolicyCookieName = "mr.cbtfap.";
+            internal const string CookieBasedTwoFactorAuthPolicyCookieName = "Accountsware2F.";
         }
 
         public class PasswordComplexity

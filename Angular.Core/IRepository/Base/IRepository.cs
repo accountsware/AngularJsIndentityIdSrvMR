@@ -9,6 +9,7 @@ namespace Angular.Core.IRepository.Base
 {
     public interface IRepository<TEntity> where TEntity : class, IObjectState
     {
+        TEntity Create();
         TEntity Find(params object[] keyValues);
         IQueryable<TEntity> SelectQuery(string query, params object[] parameters);
         void Insert(TEntity entity);

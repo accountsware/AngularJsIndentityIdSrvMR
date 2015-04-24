@@ -66,6 +66,10 @@
       <Project>{83604BB2-2D75-40BB-BE77-4F5569AD0AD2}</Project>
       <Name>Angular.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Angular.Core\Angular.Core.csproj">
+      <Project>{d5049b9c-d51d-4255-a334-22c5b1d5395a}</Project>
+      <Name>Angular.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Angular.Data\Angular.Data.csproj">
       <Project>{4c273cfc-ea24-4a77-a0a6-53feee45374a}</Project>
       <Name>Angular.Data</Name>
@@ -73,6 +77,10 @@
     <ProjectReference Include="..\Angular.Services\Angular.Services.csproj">
       <Project>{6da9fe83-12ac-4101-a36c-03943ba256f5}</Project>
       <Name>Angular.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Angular.UserManagement\Angular.UserManagement.csproj">
+      <Project>{a33fe01f-ae9b-4bde-b521-ab13916b1cfa}</Project>
+      <Name>Angular.UserManagement</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

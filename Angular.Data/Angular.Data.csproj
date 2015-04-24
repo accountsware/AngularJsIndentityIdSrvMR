@@ -76,6 +76,7 @@
     <Compile Include="QueryFluent.cs" />
     <Compile Include="Repository\base\Repository.cs" />
     <Compile Include="Repository\CustomerRepository.cs" />
+    <Compile Include="Repository\UserAccountRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
