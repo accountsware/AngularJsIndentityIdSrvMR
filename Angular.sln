@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.MVC", "..\Angular\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.UserManagement", "Angular.UserManagement\Angular.UserManagement.csproj", "{A33FE01F-AE9B-4BDE-B521-AB13916B1CFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthInfrastructure", "Core\Angular.AuthInfrastructure.csproj", "{FB9E026E-BAB3-498A-A954-B93B05C146A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthInfrastructure", "Angular.AuthInfrastructure\Angular.AuthInfrastructure.csproj", "{FB9E026E-BAB3-498A-A954-B93B05C146A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthServer", "Host\Angular.AuthServer.csproj", "{C41ECC23-BB27-4BDD-990E-4908B872F12C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.AuthServer", "Angular.AuthServer\Angular.AuthServer.csproj", "{C41ECC23-BB27-4BDD-990E-4908B872F12C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
