@@ -110,6 +110,10 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Thinktecture.IdentityModel.Core, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.IdentityModel.Core.1.4.0\lib\net45\Thinktecture.IdentityModel.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -141,11 +145,21 @@
     <Compile Include="Config\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="UserManagementExtension\GuidExt.cs" />
+    <Compile Include="UserManagementExtension\UserAccountExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Angular.AuthInfrastructure\Angular.AuthInfrastructure.csproj">
       <Project>{fb9e026e-bab3-498a-a954-b93b05c146a5}</Project>
       <Name>Angular.AuthInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Angular.Core\Angular.Core.csproj">
+      <Project>{D5049B9C-D51D-4255-A334-22C5B1D5395A}</Project>
+      <Name>Angular.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Angular.UserManagement\Angular.UserManagement.csproj">
+      <Project>{a33fe01f-ae9b-4bde-b521-ab13916b1cfa}</Project>
+      <Name>Angular.UserManagement</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
