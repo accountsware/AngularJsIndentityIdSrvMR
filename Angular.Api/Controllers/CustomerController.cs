@@ -10,6 +10,7 @@ using Angular.Core.IRepository.Base;
 using Angular.Core.IServices;
 using Angular.Core.Modals;
 using Angular.Core.Modals.Base;
+using Angular.Core.Modals.CustomerOrder;
 
 namespace Angular.Api.Controllers
 {

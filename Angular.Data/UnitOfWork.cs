@@ -12,7 +12,9 @@ using Angular.Core.Modals.Base;
 using Angular.Data.Repository.@base;
 using Microsoft.Practices.ServiceLocation;
 
-public class UnitOfWork : IUnitOfWorkAsync
+namespace Angular.Data
+{
+    public class UnitOfWork : IUnitOfWorkAsync
     {
         #region Private Fields
 
@@ -153,4 +155,5 @@ public class UnitOfWork : IUnitOfWorkAsync
 
         #endregion
     
+    }
 }

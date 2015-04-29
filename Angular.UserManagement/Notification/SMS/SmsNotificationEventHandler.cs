@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Angular.Core.IHandlers;
+using Angular.Core.CommandEventHandlers;
 using Angular.Core.Modals.Identity;
 
 namespace BrockAllen.MembershipReboot

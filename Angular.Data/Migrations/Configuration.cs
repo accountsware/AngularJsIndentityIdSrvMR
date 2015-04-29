@@ -4,6 +4,7 @@
 using System.Collections.Generic;
 using Angular.Core.Modals;
 using Angular.Core.Modals.Base;
+using Angular.Core.Modals.CustomerOrder;
 using Angular.Data.Context;
 
 namespace Angular.Data.Migrations

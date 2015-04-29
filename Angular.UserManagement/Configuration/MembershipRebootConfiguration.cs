@@ -4,7 +4,7 @@
  */
 
 using System;
-using Angular.Core.IHandlers;
+using Angular.Core.CommandEventHandlers;
 using Angular.Core.IIdentity;
 using Angular.Core.Modals.Identity;
 

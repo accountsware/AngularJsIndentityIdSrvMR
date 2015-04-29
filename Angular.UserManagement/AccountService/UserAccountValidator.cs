@@ -5,7 +5,7 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
-using Angular.Core.IHandlers;
+using Angular.Core.CommandEventHandlers;
 using Angular.Core.Modals.Identity;
 
 namespace BrockAllen.MembershipReboot

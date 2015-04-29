@@ -58,6 +58,19 @@
     <Compile Include="CoreHelpers\StateHelper.cs" />
     <Compile Include="Context\AngularContext.cs" />
     <Compile Include="Context\DataContext.cs" />
+    <Compile Include="DbContextImpl\AmbientContextSuppressor.cs" />
+    <Compile Include="DbContextImpl\AmbientDbContextLocator.cs" />
+    <Compile Include="DbContextImpl\DbContextCollection.cs" />
+    <Compile Include="DbContextImpl\DbContextReadOnlyScope.cs" />
+    <Compile Include="DbContextImpl\DbContextScope.cs" />
+    <Compile Include="DbContextImpl\DbContextScopeFactory.cs" />
+    <Compile Include="DbContextInterfaces\DbContextScopeOption.cs" />
+    <Compile Include="DbContextInterfaces\IAmbientDbContextLocator.cs" />
+    <Compile Include="DbContextInterfaces\IDbContextCollection.cs" />
+    <Compile Include="DbContextInterfaces\IDbContextFactory.cs" />
+    <Compile Include="DbContextInterfaces\IDbContextReadOnlyScope.cs" />
+    <Compile Include="DbContextInterfaces\IDbContextScope.cs" />
+    <Compile Include="DbContextInterfaces\IDbContextScopeFactory.cs" />
     <Compile Include="Mappings\CategoryMap.cs" />
     <Compile Include="Mappings\CustomerMap.cs" />
     <Compile Include="Mappings\EmployeeMap.cs" />
@@ -93,6 +106,7 @@
       <Name>Angular.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

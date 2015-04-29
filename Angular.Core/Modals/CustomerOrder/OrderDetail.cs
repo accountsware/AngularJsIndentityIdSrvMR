@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
 using Angular.Core.Modals.Base;
 
-
-namespace Angular.Core.Modals
+namespace Angular.Core.Modals.CustomerOrder
 {
     public partial class OrderDetail : Entity
     {

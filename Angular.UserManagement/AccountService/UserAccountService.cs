@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
-using Angular.Core.IHandlers;
+using Angular.Core.CommandEventHandlers;
 using Angular.Core.IRepository;
 using Angular.Core.Modals.Identity;
 

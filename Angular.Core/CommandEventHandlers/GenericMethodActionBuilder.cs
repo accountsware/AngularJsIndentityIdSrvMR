@@ -7,7 +7,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Linq.Expressions;
 
-namespace Angular.Core.IHandlers
+namespace Angular.Core.CommandEventHandlers
 {
     class GenericMethodActionBuilder<TargetBase, ParamBase>
     {

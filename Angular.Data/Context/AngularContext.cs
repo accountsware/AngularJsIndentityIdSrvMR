@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Reflection;
+using Angular.Core.Modals.CustomerOrder;
 using Angular.Core.Modals.Identity;
 using Angular.Data.Mappings;
 using Angular.Core.Modals;

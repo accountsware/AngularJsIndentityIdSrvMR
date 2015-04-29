@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Angular.Core.IHandlers
+namespace Angular.Core.CommandEventHandlers
 {
     public class DelegateEventHandler<T> : IEventHandler<T>
         where T : IEvent
